@@ -46,6 +46,12 @@ li {
   margin: 1rem 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .header__container {
+    display: grid;
+  }
+}
+
 /* Inicio Title */
 .header__title a {
   display: flex;
@@ -137,7 +143,7 @@ li {
 .user__menu {
   border-radius: 5px;
   position: absolute;
-  top: 7.5rem;
+  top: 6.5rem;
   display: none;
   width: 25rem;
   background-color: var(--blue);
