@@ -92,7 +92,7 @@ li {
 }
 
 .header__ul {
-  height: 100%; 
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -100,7 +100,7 @@ li {
 
 .header__ul li {
   width: 100%;
-  height: 100%  ;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,97 +179,61 @@ li {
 }
 
 /* Fin Nav */
+
 /* Inicio User */
 .header__user {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: 11fr 1fr;
 }
+
 .user__name {
-  grid-area: 1 / 1 / 12 / 11;
   display: flex;
   align-items: center;
   font-size: 1.4rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .user__name img {
   width: 3rem;
+  margin-right: 0.5rem;
 }
 
-.user__nav {
-  grid-area: 1 / 11 / 12 / 13;
+.div__label__user {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.user__nav a {
-  display: block;
-}
-
-.nav__div {
-  grid-area: 12 / 1 / 13 / 13;
-}
-
-.user__menu {
-  border-radius: 5px;
-  position: absolute;
-  top: 6.5rem;
+.header__user input {
   display: none;
-  width: 25rem;
+}
+
+.user__ul {
+  display: none;
+}
+
+.header__user input:checked ~ .user__ul {
+  width: 20rem;
+  position: fixed;
+  right: 0.5rem;
+  top: 8rem;
+  display: inline-block;
+  border-radius: 10px;
   background-color: var(--blue);
 }
-
-.header__user:hover .user__menu {
-  display: block;
+.header__user input:checked ~ .user__ul li {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid var(--blanco);
 }
 
-.user__menu li a {
-  display: block;
+.user__ul li a {
+  width: 100%;
   color: white;
-  padding: 10px;
-  font-size: 1.4rem;
-  text-align: center;
-  border-bottom: solid 1px var(--blanco);
-  transition: 0.3s;
+  font-size: 1.5rem;
 }
 
-.user__menu li a:hover {
-  background-color: #313197;
-}
-
-@media only screen and (max-width: 480px) {
-  .user__menu {
-    width: 15rem;
-  }
-  .user__name {
-    justify-content: space-evenly;
-    font-size: 1rem;
-  }
-  .user__name img {
-    width: 2rem;
-  }
-  .user__nav a svg {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .user__menu {
-    width: 24rem;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
-  .user__menu {
-    width: 20rem;
-  }
-  .user__name p {
-    text-align: center;
-  }
-}
 /* Fin User */
 
 /* Inicio Boxes con los Saldos */
@@ -316,7 +280,7 @@ li {
   .box__card:nth-child(4) {
     grid-area: 1 / 2 / 2 / 3;
   }
-} 
+}
 
 .box__card__text {
   text-align: center;
@@ -348,7 +312,7 @@ li {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .box__card {
     width: 90%;
-    margin: 1rem ;
+    margin: 1rem;
     margin-bottom: 2rem;
   }
 }
@@ -416,7 +380,7 @@ li {
 }
 
 @media only screen and (max-width: 480px) {
-  .account__container{ 
+  .account__container {
     width: 90%;
   }
 }
@@ -497,7 +461,8 @@ li {
 }
 
 @media only screen and (max-width: 480px) {
-  .grafico__ingreso, .grafico__egreso {
+  .grafico__ingreso,
+  .grafico__egreso {
     flex-direction: column;
   }
 }
@@ -523,9 +488,9 @@ li {
   align-items: center;
 }
 
-
 @media only screen and (max-width: 480px) {
-  .grafico__ingreso, .grafico__egreso {
+  .grafico__ingreso,
+  .grafico__egreso {
     flex-direction: column;
   }
   .grafico__ingreso {
@@ -534,7 +499,8 @@ li {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .grafico__ingreso, .grafico__egreso {
+  .grafico__ingreso,
+  .grafico__egreso {
     justify-content: center;
   }
 }
@@ -549,7 +515,7 @@ li {
 
 @media only screen and (max-width: 480px) {
   .grafico__circulo {
-    margin: 0
+    margin: 0;
   }
 }
 
@@ -627,7 +593,7 @@ li {
 
 .grafico__texto-lista {
   font-size: 1.2rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .grafico__color {
@@ -649,7 +615,9 @@ li {
   border-top-left-radius: 10px;
 }
 
-.footer__redes, .footer__datos, .footer__nav {
+.footer__redes,
+.footer__datos,
+.footer__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -666,11 +634,9 @@ li {
   font-size: 1.2rem;
 }
 
-
 .footer__redes--label {
   display: none;
 }
-
 
 @media only screen and (max-width: 768px) {
   .footer__container {
