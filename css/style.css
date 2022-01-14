@@ -240,6 +240,19 @@ li {
   font-size: 1.7rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .user__name {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .user__name p {
+    display: none;
+  }
+  .header__user {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .header__user input:checked ~ .user__ul {
     left: 80%;
