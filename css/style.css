@@ -38,12 +38,12 @@ li {
 
 /* Inicio Header */
 .header__container {
-  width: 100%;
+  width: 95%;
+  margin: 1rem auto;
   background-color: var(--blanco);
   height: auto;
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
-  margin: 1rem 0;
 }
 
 @media only screen and (max-width: 480px) {
