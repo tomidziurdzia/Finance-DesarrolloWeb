@@ -31,7 +31,7 @@ li {
   list-style: none;
 }
 
-.container {
+body {
   max-width: var(--container);
   margin: auto;
 }
@@ -710,3 +710,110 @@ li {
     }
   }
 }
+
+/* Hoja Transacciones */
+/* Inicio Filtro y Nueva Transaccion Btn */
+.filtro-nueva__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.filtro__container,
+.nueva__transaccion {
+  width: 22rem;
+  height: 6rem;
+  font-size: 2rem;
+}
+
+.filtro__container a,
+.nueva__transaccion a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  color: var(--blanco);
+}
+
+.filtro__container a {
+  background-color: var(--green);
+}
+
+.nueva__transaccion a {
+  background-color: var(--blue);
+}
+/* Fin Filtro y Nueva Transaccion Btn */
+/* Inicio Tabla */
+.table__container {
+  border-collapse: collapse;
+  margin: 2.5rem auto 1rem auto;
+  font-size: 1.5rem;
+  min-width: 100rem;
+  border: 1px transparent;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.table__container thead tr {
+  background-color: #7a8fc9;
+  color: var(--blanco);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.table__container th,
+.table__container td {
+  padding: 1.2rem 1.5rem;
+}
+
+.table__container tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table__container tbody tr:nth-of-type(even) {
+  background-color: #dfe7fd;
+}
+
+.table__container tbody tr:last-of-type {
+  border-bottom: 2px solid #7a8fc9;
+}
+
+.buttons__table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons__table a {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.buttons__table a svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.table__pags {
+  display: flex;
+  width: 25%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.table__pags p {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: #7a8fc9;
+  color: var(--blanco);
+}
+
+/* Fin Tabla */
