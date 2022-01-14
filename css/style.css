@@ -479,3 +479,161 @@ li {
 .account__aclaration {
   font-size: 1.1rem;
 }
+
+/* Fin Informe de Cuentas */
+
+/* Inicio Graficos */
+
+.graficos__container {
+  width: 95%;
+  height: auto;
+  display: flex;
+  margin: 2rem auto;
+  padding: 2rem;
+  justify-content: space-evenly;
+  border: 1px transparent;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .graficos__container {
+    flex-direction: column;
+  }
+
+  .grafico__ingreso, .grafico__egreso {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .graficos__container {
+    flex-direction: column;
+  }
+}
+
+.grafico__texto {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.grafico__ingreso,
+.grafico__egreso {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .grafico__ingreso, .grafico__egreso {
+    flex-direction: column;
+  }
+  .grafico__ingreso {
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .grafico__ingreso, .grafico__egreso {
+    justify-content: center;
+  }
+}
+
+.grafico__circulo {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .grafico__circulo {
+    margin: 0
+  }
+}
+
+.grafico__circulo.ingreso {
+  background: conic-gradient(
+    #f07167 15%,
+    #99d98c 15% 23%,
+    #277da1 23% 46%,
+    #ffd166 46% 80%,
+    orange 80%
+  );
+}
+
+.grafico__color.ventas {
+  background-color: #f07167;
+}
+
+.grafico__color.dif-cot {
+  background-color: #99d98c;
+}
+
+.grafico__color.int-gan {
+  background-color: #277da1;
+}
+
+.grafico__color.alquileres {
+  background-color: #ffd166;
+}
+
+.grafico__color.otras-ventas {
+  background-color: orange;
+}
+
+.grafico__circulo.egreso {
+  background: conic-gradient(
+    #f07167 40%,
+    #99d98c 40% 70%,
+    #277da1 70% 80%,
+    #ffd166 80% 95%,
+    orange 95%
+  );
+}
+
+.grafico__color.sueldos {
+  background-color: #f07167;
+}
+
+.grafico__color.combustible {
+  background-color: #99d98c;
+}
+
+.grafico__color.int-perd {
+  background-color: #277da1;
+}
+
+.grafico__color.int-ban {
+  background-color: #ffd166;
+}
+
+.grafico__color.servicios {
+  background-color: orange;
+}
+
+.grafico__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grafico__lista--detalle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grafico__texto-lista {
+  font-size: 1.2rem;
+  margin-left: .5rem;
+}
+
+.grafico__color {
+  width: 1.5rem;
+  height: 1.5rem;
+}
