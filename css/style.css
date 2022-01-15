@@ -46,20 +46,6 @@ body {
   grid-template-columns: 2fr 8fr 2fr;
 }
 
-@media only screen and (max-width: 480px) {
-  .header__container {
-    display: grid;
-    grid-template-columns: 8fr 6fr;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .header__container {
-    display: grid;
-    grid-template-columns: 8fr 4fr;
-  }
-}
-
 /* Inicio Title */
 .header__title a {
   display: flex;
@@ -67,12 +53,6 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .header__title a {
-    justify-content: flex-start;
-  }
 }
 
 .header__title a img {
@@ -133,49 +113,6 @@ body {
 
 .header__nav label {
   display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .header__nav {
-    position: fixed;
-    bottom: 6rem;
-  }
-
-  .div__label__menu {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
-    background-color: var(--primary-color);
-  }
-
-  .header__ul {
-    display: none;
-  }
-  .header__nav input:checked ~ ul {
-    display: block;
-    max-width: 100%;
-    margin: auto;
-  }
-  .header__nav input:checked ~ ul li {
-    display: flex;
-  }
-  .header__nav label {
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    right: 5px;
-  }
-
-  .header__ul li {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  .header__ul li a {
-    background-color: var(--blue);
-    color: white;
-  }
 }
 
 /* Fin Nav */
@@ -240,25 +177,6 @@ body {
   font-size: 1.7rem;
 }
 
-@media only screen and (max-width: 480px) {
-  .user__name {
-    margin: 0;
-    justify-content: flex-end;
-  }
-  .user__name p {
-    display: none;
-  }
-  .header__user {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .header__user input:checked ~ .user__ul {
-    left: 80%;
-  }
-}
-
 /* Fin User */
 
 /* Inicio Boxes con los Saldos */
@@ -266,19 +184,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-}
-
-@media only screen and (max-width: 480px) {
-  .box__container {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .box__container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
 }
 
 .box__card {
@@ -291,20 +196,6 @@ body {
   border-radius: 10px;
   border: 1px transparent;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .box__card:nth-child(2) {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-
-  .box__card:nth-child(3) {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-
-  .box__card:nth-child(4) {
-    grid-area: 1 / 2 / 2 / 3;
-  }
 }
 
 .box__card__text {
@@ -326,20 +217,6 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-}
-
-@media only screen and (max-width: 480px) {
-  .box__card {
-    margin: 1rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .box__card {
-    width: 90%;
-    margin: 1rem;
-    margin-bottom: 2rem;
-  }
 }
 
 .inicial {
@@ -378,17 +255,6 @@ body {
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 480px) {
-  .filter__container {
-    width: 50%;
-    margin: 0 auto;
-  }
-  .filter__input {
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-}
-
 /* Fin Filtro Fecha */
 /* Inicio Informe de Cuentas */
 .account__container {
@@ -404,12 +270,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-@media only screen and (max-width: 480px) {
-  .account__container {
-    width: 90%;
-  }
-}
-
 .account__title h2 {
   text-align: center;
   font-size: 3rem;
@@ -421,24 +281,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
-}
-
-@media only screen and (max-width: 480px) {
-  .account__boxes {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 720px) {
-  .account__boxes {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (min-width: 721px) and (max-width: 768px) {
-  .account__boxes {
-    grid-template-columns: repeat(3, 2fr);
-  }
 }
 
 .account__card {
@@ -485,20 +327,6 @@ body {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 480px) {
-  .grafico__ingreso,
-  .grafico__egreso {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .graficos__container {
-    flex-direction: column;
-    margin-bottom: 7rem;
-  }
-}
-
 .grafico__texto {
   font-size: 2rem;
   text-align: center;
@@ -513,35 +341,12 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
-  .grafico__ingreso,
-  .grafico__egreso {
-    flex-direction: column;
-  }
-  .grafico__ingreso {
-    margin-bottom: 4rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .grafico__ingreso,
-  .grafico__egreso {
-    justify-content: center;
-  }
-}
-
 .grafico__circulo {
   width: 250px;
   height: 250px;
   display: flex;
   border-radius: 50%;
   margin-right: 1rem;
-}
-
-@media only screen and (max-width: 480px) {
-  .grafico__circulo {
-    margin: 0;
-  }
 }
 
 .grafico__circulo.ingreso {
@@ -663,24 +468,6 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer__container {
-    display: none;
-  }
-
-  .footer__redes--label {
-    display: block;
-    width: 15rem;
-  }
-  .footer__redes--label ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 5rem;
-  }
-}
-
 .boton__mas {
   position: fixed;
   width: 60px;
@@ -693,22 +480,6 @@ body {
   text-align: center;
   font-size: 30px;
   z-index: 100;
-}
-
-@media only screen and (max-width: 768px) {
-  .boton__mas {
-    width: 45px;
-    height: 45px;
-    font-size: 24px;
-    bottom: 20px;
-    right: 42%;
-  }
-
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .boton__mas {
-      right: 45%;
-    }
-  }
 }
 
 /* Hoja Transacciones */
@@ -817,3 +588,188 @@ body {
 }
 
 /* Fin Tabla */
+
+/* INICIO @media only screen and (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 8fr 6fr;
+  }
+  .user__name {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .user__name p {
+    display: none;
+  }
+  .header__user {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box__container {
+    grid-template-columns: 1fr;
+  }
+  .box__card {
+    margin: 1rem;
+  }
+  .filter__container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .filter__input {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .account__container {
+    width: 90%;
+  }
+  .account__boxes {
+    grid-template-columns: 1fr;
+  }
+  .grafico__ingreso,
+  .grafico__egreso {
+    flex-direction: column;
+  }
+  .grafico__ingreso {
+    margin-bottom: 4rem;
+  }
+  .grafico__circulo {
+    margin: 0;
+  }
+}
+/* FIN @media only screen and (max-width: 480px) */
+
+/* INICIO @media only screen and (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .header__nav {
+    position: fixed;
+    bottom: 6rem;
+    right: 0;
+    left: 0;
+  }
+  .div__label__menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--primary-color);
+  }
+
+  .header__ul {
+    display: none;
+  }
+
+  .header__nav input:checked ~ ul {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+  .header__nav input:checked ~ ul li {
+    display: flex;
+  }
+  .header__nav label {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+  }
+
+  .header__ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .header__ul li a {
+    background-color: var(--blue);
+    color: white;
+  }
+  .box__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .graficos__container {
+    flex-direction: column;
+    margin-bottom: 7rem;
+  }
+  .footer__container {
+    display: none;
+  }
+
+  .footer__redes--label {
+    display: block;
+    width: 15rem;
+  }
+  .footer__redes--label ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+  }
+  .boton__mas {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 42%;
+  }
+}
+
+/* FIN @media only screen and (max-width: 768px) */
+
+/* INICIO @media only screen and (min-width: 481px) and (max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+  }
+  .header__title a {
+    justify-content: flex-start;
+  }
+  .box__card:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .box__card:nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .box__card:nth-child(4) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .box__card {
+    width: 90%;
+    margin: 1rem;
+    margin-bottom: 2rem;
+  }
+  .boton__mas {
+    right: 45%;
+  }
+}
+/* FIN @media only screen and (min-width: 481px) and (max-width: 768px) */
+
+/* OTRAS MEDIAS QUERIES */
+
+@media only screen and (min-width: 1200px) {
+  .header__user input:checked ~ .user__ul {
+    left: 80%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .account__boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 768px) {
+  .account__boxes {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .grafico__ingreso,
+  .grafico__egreso {
+    justify-content: center;
+  }
+}
