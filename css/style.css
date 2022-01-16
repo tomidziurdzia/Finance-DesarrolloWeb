@@ -34,6 +34,9 @@ li {
 body {
   max-width: var(--container);
   margin: auto;
+  position: relative;
+  padding-bottom: 15rem;
+  min-height: 100vh;
 }
 
 /* Inicio Header */
@@ -455,6 +458,10 @@ body {
   background-color: var(--blue);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .footer__redes,
@@ -796,6 +803,9 @@ body {
 
 /* INICIO @media only screen and (max-width: 768px) */
 @media only screen and (max-width: 768px) {
+  body {
+    padding-bottom: 1rem;
+  }
   .header__nav {
     position: fixed;
     bottom: 6rem;
