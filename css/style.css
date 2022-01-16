@@ -904,6 +904,10 @@ body {
     padding: 0.5rem 0;
     text-align: center;
   }
+  .table__container__cuenta,
+  .table__container__categoria {
+    margin-bottom: 5rem;
+  }
 }
 
 /* FIN @media only screen and (max-width: 768px) */
