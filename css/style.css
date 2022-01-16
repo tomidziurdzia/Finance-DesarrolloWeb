@@ -798,6 +798,9 @@ body {
   .informe__boxes {
     grid-template-columns: 1fr;
   }
+  .buttons__table {
+    flex-direction: column;
+  }
 }
 /* FIN @media only screen and (max-width: 480px) */
 
@@ -894,9 +897,11 @@ body {
   .tables__container {
     display: flex;
     flex-direction: column;
+    width: 95%;
   }
   .table__container__cuenta tbody tr td,
   .table__container__categoria tbody tr td {
+    padding: 0.5rem 0;
     text-align: center;
   }
 }
