@@ -552,7 +552,7 @@ body {
 
 .table__container th,
 .table__container td {
-  padding: 1.2rem 1.5rem;
+  padding: .8rem 1.5rem;
 }
 
 .table__container tbody tr:nth-of-type(even) {
@@ -895,7 +895,7 @@ body {
   .informe__boxes {
     grid-template-columns: 1fr;
   }
-  .buttons__table {
+  .table__container__cuenta .buttons__table,  .table__container__categoria .buttons__table {
     flex-direction: column;
   }
   .login__header {
@@ -1020,6 +1020,9 @@ body {
   .table__container__cuenta,
   .table__container__categoria {
     margin-bottom: 5rem;
+  }
+  .table__container .buttons__table {
+    justify-content: flex-start;
   }
 }
 
