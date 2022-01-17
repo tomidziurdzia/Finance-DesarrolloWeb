@@ -364,6 +364,21 @@ body {
   );
 }
 
+@keyframes aparecer {
+  20% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}   
+.grafico__circulo:hover {
+  transition: 2s;
+  transform: rotate(360deg);
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
 .grafico__color.ventas {
   background-color: #f07167;
 }
