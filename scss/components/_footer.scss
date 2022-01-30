@@ -1,0 +1,41 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.footer__container {
+    width: 95%;
+    height: 15rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    background-color: $blue;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .footer__redes {
+        @extend %flex;
+        flex-direction: column;
+        .footer__redes--label {
+            display: none;
+        }
+    }
+    .footer__datos {
+        @extend %flex;
+        flex-direction: column;
+        p {
+            color: $blanco;
+            font-size: 1.5rem;
+        }
+    }
+    .footer__nav {
+        @extend %flex;
+        flex-direction: column;
+        a {
+            color: $blanco;
+            font-size: 1.2rem;
+        }
+    }
+}
+

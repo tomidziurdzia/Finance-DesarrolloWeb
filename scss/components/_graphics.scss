@@ -1,0 +1,88 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.graficos__container {
+    width: 95%;
+    height: auto;
+    display: flex;
+    margin: 2rem auto;
+    padding: 2rem;
+    justify-content: space-evenly;
+    border: 1px transparent;
+    @extend %shadow;
+    border-radius: 10px;
+    .grafico__texto {
+        font-size: 2rem;
+        text-align: center;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    div {
+        .grafico__ingreso {
+            @extend %grafico;
+            .ingreso {
+                background: conic-gradient(
+                #f07167 15%,
+                #99d98c 15% 23%,
+                #277da1 23% 46%,
+                #ffd166 46% 80%,
+                orange 80%
+                );
+            }
+            .grafico__lista {
+                @extend %graficoLista;
+                .grafico__lista--detalle {
+                    @extend %graficoListaDet;
+                    .ventas {
+                        background-color: #f07167;   
+                    }
+                    .dif-cot {
+                        background-color: #99d98c;
+                    }
+                    .int-gan {
+                        background-color: #277da1;
+                    }
+                    .alquileres {
+                        background-color: #ffd166;
+                    }
+                    .otras-ventas {
+                        background-color: orange;
+                    }
+                }
+            }
+        }
+        .grafico__egreso {
+            @extend %grafico;
+            .egreso {
+                background: conic-gradient(
+                #f07167 40%,
+                #99d98c 40% 70%,
+                #277da1 70% 80%,
+                #ffd166 80% 95%,
+                orange 95%
+                );
+            }
+            .grafico__lista {
+                @extend %graficoLista;
+                .grafico__lista--detalle {
+                    @extend %graficoListaDet;
+                    .ventas {
+                        background-color: #f07167;   
+                    }
+                    .dif-cot {
+                        background-color: #99d98c;
+                    }
+                    .int-gan {
+                        background-color: #277da1;
+                    }
+                    .alquileres {
+                        background-color: #ffd166;
+                    }
+                    .otras-ventas {
+                        background-color: orange;
+                    }
+                }
+            }
+        }
+    }
+    
+}

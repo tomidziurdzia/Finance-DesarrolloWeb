@@ -1,0 +1,38 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.box__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    .box__card {
+        @extend %box-card;
+        .box__card__text {
+            text-align: center;
+            .box__card--name {
+                font-size: 2.2rem;
+            }
+            .box__card--number {
+                font-size: 2rem;
+            }
+        }
+        .box__card__icon {
+            @extend %flex;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        .inicial {
+        background-color: $yellow;
+        }
+        .ingresos {
+        background-color: $green;
+        }
+        .egresos {
+        background-color: $red;
+        }
+        .final {
+        background-color: #277da1;
+        }
+    }
+}

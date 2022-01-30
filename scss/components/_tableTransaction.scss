@@ -1,0 +1,22 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.table__container {
+    @extend %table-container;
+}
+
+.table__pags {
+    display: flex;
+    width: 25%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+    p {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: #7a8fc9;
+        color: $blanco;
+    }
+}

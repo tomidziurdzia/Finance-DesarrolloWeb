@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  margin: 0;
+}
+
+body {
+  max-width: var(--container);
+  margin: auto;
+  position: relative;
+  padding-bottom: 15rem;
+  min-height: 100vh;
+  max-width: 150rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+
+@import './base/colores';
+@import './base/extends';
+@import './components/header';
+@import './components/boxes-saldos';
+@import './components/filter';
+@import './components/account';
+@import './components/graphics';
+@import './components/footer';
+@import './components/btnMas';
+@import './components/tableTransaction.scss';
+@import './components/informes';
+@import './components/accountCategory';
+@import './components/login';
+
+/* Inicio Filtro y Nueva Transaccion Btn */
+.filtro-nueva__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.filtro__container,
+.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+    @extend %buttons;
+}
+
+.filtro__container a, .boton__nueva--cuenta a {
+  background-color: $green;
+}
+
+.nueva__transaccion a, .boton__nueva--categoria a {
+  background-color: $blue;
+}
+/* Fin Filtro y Nueva Transaccion Btn */

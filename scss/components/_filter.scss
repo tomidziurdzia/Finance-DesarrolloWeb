@@ -1,0 +1,17 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.filter__container {
+    @extend %flex;
+    width: 100%;
+    .filter__input {
+        width: 30rem;
+        height: 6rem;
+        font-family: "Roboto";
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        border: 1px transparent;
+        @extend %shadow;
+    }
+}

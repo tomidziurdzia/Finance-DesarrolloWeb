@@ -1,0 +1,23 @@
+{
+  "name": "finance-desarrolloweb",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Tomas Dziurdzia</h1>\r <h3 align=\"center\">A passionate fullstack developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomidziurdzia/Finance-DesarrolloWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomidziurdzia/Finance-DesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/tomidziurdzia/Finance-DesarrolloWeb#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

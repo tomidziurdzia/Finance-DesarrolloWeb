@@ -1,0 +1,119 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.header__container {
+    width: 95%;
+    margin: 1rem auto;
+    background-color: $blanco;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+
+    /* Inicio Title */
+    .header__title{
+        a {
+            @extend %flex;
+            @extend %wyh;
+        }
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+        h1 {
+            display: inline-block;
+            font-size: 3rem;
+            color: $primary-color;
+        }
+    }
+    /* Fin Title */
+    /* Inicio Nav */
+    .header__nav {
+        width: 100%;
+        .header__ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            li {
+                @extend %flex;
+                @extend %wyh;
+                text-align: center;
+                a {
+                    @extend %flex;
+                    width: 85%;
+                    height: 100%;
+                    border: 1px solid $blue;
+                    padding: 8px 16px;
+                    font-size: 1.4rem;
+                    border-radius: 10px;
+                    transition: 0.3s;
+                    @extend %shadow;
+                    &:hover {
+                        background-color: $blue;
+                        color: $blanco;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        input {
+            display: none;
+        }
+        .div__label__menu {
+            display: none;
+        }
+    }
+    /* Fin Nav */
+    /* Inicio User */
+    .header__user {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+        .user__name {
+            @extend %flex;
+            font-size: 1.4rem;
+            img {
+                width: 3rem;
+                margin-right: 0.5rem;
+            }
+        }
+        .div__label__user {
+            display: flex;
+            align-items: center;
+        }
+        input {
+            display: none;
+            &:checked {
+                ~ .user__ul {
+                    width: 20rem;
+                    position: fixed;
+                    right: 0.5rem;
+                    top: 8rem;
+                    display: inline-block;
+                    border-radius: 10px;
+                    background-color: $blue;
+                    li {
+                        display: flex;
+                        width: 100%;
+                        padding: 1rem;
+                        border-bottom: 1px solid $blanco;
+                        a {
+                            width: 100%;
+                            color: white;
+                            font-size: 1.5rem;
+                            &:hover {
+                                width: 100%;
+                                color: white;
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .user__ul {
+            display: none;
+        }
+    }
+}
+/* Fin User */

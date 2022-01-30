@@ -1,0 +1,93 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.login__header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.login__grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-items: center;
+    .login__grafico {
+        text-align: center;
+        font-size: 2rem;
+        width: 80%;
+        height: 50rem;
+        img {
+            width: 30rem;
+        }
+    }
+    .login__container {
+        width: 80%;
+        padding: 2rem;
+        border-radius: 10px;
+        border: 1px transparent;
+        @extend %shadow;
+        .login__form {
+            width: 90%;
+            margin: auto;
+            .login__campo {
+                .login__input {
+                    padding: 1rem 3rem 1rem 1rem;
+                    display: block;
+                    width: 80%;
+                    margin: 2rem auto;
+                }
+            }
+            .login__check {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .login__button {
+                display: block;
+                width: 70%;
+                margin: auto;
+                text-align: center;
+                padding: 1rem 2rem;
+                background-color: $primary-color;
+                color: $blanco;
+                font-size: 1.5rem;
+                border-radius: 10px;
+                border: 1px transparent;
+                @extend %shadow;
+                margin-bottom: 1rem;
+            }
+            .login__question {
+                text-align: center;
+                display: block;
+                margin: auto;
+                margin-bottom: 2rem;
+            }
+            .login__or {
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #e2e2e2;
+            }
+            .login__redes {
+                margin: 2rem 0;
+                display: block;
+                text-align: center;
+                button {
+                    width: 12rem;
+                    padding: 1rem 1rem;
+                    background-color: rgb(219, 68, 55);
+                    color: $blanco;
+                    font-size: 2rem;
+                    border-radius: 10px;
+                    border: 1px transparent;
+                    @extend %shadow;
+                    margin: auto;
+                    @extend %flex;
+                    svg {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

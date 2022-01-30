@@ -1,0 +1,48 @@
+@import '../base/colores';
+@import '../base/extends';
+
+.informe__container {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .informe__ingresos, .informe__egresos {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 10px;
+        @extend %shadow;
+        .informe__title {
+            text-align: center;
+            border-bottom: 2px solid $gray;
+            h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .informe__boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        margin-top: 2rem;
+        .informe__card {
+            width: 90%;
+            padding: 2rem;
+            @extend %flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 1px transparent;
+            box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
+            .informe__name {
+                font-size: 2rem;
+            }
+            .informe__number {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
