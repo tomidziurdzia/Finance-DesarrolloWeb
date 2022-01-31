@@ -31,14 +31,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .account__container .account__boxes .account__card, .filter__container, .box__container .box__card .box__card__icon, .header__container .header__user .user__name, .header__container .header__nav .header__ul li a, .header__container .header__nav .header__ul li, .header__container .header__title a, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header__container .header__nav .header__ul li, .header__container .header__title a, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   width: 100%;
   height: 100%;
 }
@@ -168,27 +172,35 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .account__container .account__boxes .account__card, .filter__container, .box__container .box__card .box__card__icon, .header__container .header__user .user__name, .header__container .header__nav .header__ul li a, .header__container .header__nav .header__ul li, .header__container .header__title a, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header__container .header__nav .header__ul li, .header__container .header__title a, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   width: 100%;
   height: 100%;
 }
@@ -318,13 +330,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -434,14 +450,18 @@ li {
 
 /* Fin User */
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .account__container .account__boxes .account__card, .filter__container, .box__container .box__card .box__card__icon, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -571,13 +591,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -616,14 +640,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .account__container .account__boxes .account__card, .filter__container, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -753,13 +781,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -779,14 +811,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .account__container .account__boxes .account__card, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -916,13 +952,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -972,14 +1012,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -1109,13 +1153,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -1174,14 +1222,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -1311,13 +1363,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -1373,14 +1429,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -1510,13 +1570,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -1539,14 +1603,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -1676,13 +1744,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -1733,14 +1805,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav, .informe__container .informe__boxes .informe__card {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav, .informe__container .informe__boxes .informe__card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -1870,13 +1946,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -1906,14 +1986,18 @@ li {
 }
 
 .login__grid .login__container .login__form .login__redes button, .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav, .informe__container .informe__boxes .informe__card {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav, .informe__container .informe__boxes .informe__card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
   width: 100%;
   height: 100%;
 }
@@ -2043,13 +2127,17 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
   width: 22rem;
   height: 6rem;
   font-size: 2rem;
 }
 .filtro__container a,
-.nueva__transaccion a, .boton__nueva--cuenta a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
   border-radius: 10px;
   padding: 1rem 0rem;
   color: #ffffff;
@@ -2147,14 +2235,101 @@ li {
   justify-items: center;
 }
 
-.filtro__container a, .boton__nueva--cuenta a {
+.filtro__container a,
+.boton__nueva--cuenta a {
   background-color: #99d98c;
 }
 
-.nueva__transaccion a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--categoria a {
   background-color: #4173ff;
 }
 
 /* Fin Filtro y Nueva Transaccion Btn */
+/* INICIO @media only screen and (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 8fr 6fr;
+  }
+  .header__container .header__user {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header__container .header__user .user__name {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .header__container .header__user .user__name p {
+    display: none;
+  }
+
+  .box__container {
+    grid-template-columns: 1fr;
+  }
+  .box__container .box__card {
+    margin: 1rem;
+  }
+
+  .filter__container {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .filter__container .filter__input {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .account__container {
+    width: 90%;
+  }
+  .account__container .account__boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico__ingreso,
+.grafico__egreso {
+    flex-direction: column;
+  }
+  .grafico__ingreso .grafico__circulo,
+.grafico__egreso .grafico__circulo {
+    margin: 0;
+  }
+
+  .grafico__ingreso {
+    margin-bottom: 4rem;
+  }
+
+  .informe__container {
+    grid-template-columns: 1fr;
+    margin-bottom: 8rem;
+    gap: 2rem;
+  }
+  .informe__container .informe__ingresos .informe__boxes,
+.informe__container .informe__egresos .informe__boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .table__container__cuenta tbody tr .buttons__table,
+.table__container__categoria tbody tr .buttons__table {
+    flex-direction: column;
+  }
+
+  .login__header {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .login__grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .login__grid .login__grafico {
+    display: none;
+  }
+  .login__grid .login__container {
+    width: 100%;
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -31,20 +31,19 @@ li {
   list-style: none;
 }
 
-
-@import './base/colores';
-@import './base/extends';
-@import './components/header';
-@import './components/boxes-saldos';
-@import './components/filter';
-@import './components/account';
-@import './components/graphics';
-@import './components/footer';
-@import './components/btnMas';
-@import './components/tableTransaction.scss';
-@import './components/informes';
-@import './components/accountCategory';
-@import './components/login';
+@import "./base/colores";
+@import "./base/extends";
+@import "./components/header";
+@import "./components/boxes-saldos";
+@import "./components/filter";
+@import "./components/account";
+@import "./components/graphics";
+@import "./components/footer";
+@import "./components/btnMas";
+@import "./components/tableTransaction.scss";
+@import "./components/informes";
+@import "./components/accountCategory";
+@import "./components/login";
 
 /* Inicio Filtro y Nueva Transaccion Btn */
 .filtro-nueva__container {
@@ -54,15 +53,103 @@ li {
 }
 
 .filtro__container,
-.nueva__transaccion, .boton__nueva--cuenta, .boton__nueva--categoria {
-    @extend %buttons;
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
+  @extend %buttons;
 }
 
-.filtro__container a, .boton__nueva--cuenta a {
+.filtro__container a,
+.boton__nueva--cuenta a {
   background-color: $green;
 }
 
-.nueva__transaccion a, .boton__nueva--categoria a {
+.nueva__transaccion a,
+.boton__nueva--categoria a {
   background-color: $blue;
 }
 /* Fin Filtro y Nueva Transaccion Btn */
+
+/* INICIO @media only screen and (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 8fr 6fr;
+    .header__user {
+      grid-template-columns: repeat(2, 1fr);
+      .user__name {
+        margin: 0;
+        justify-content: flex-end;
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+  .box__container {
+    grid-template-columns: 1fr;
+    .box__card {
+      margin: 1rem;
+    }
+  }
+  .filter__container {
+    width: 65%;
+    margin: 0 auto;
+    .filter__input {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  }
+  .account__container {
+    width: 90%;
+    .account__boxes {
+      grid-template-columns: 1fr;
+    }
+  }
+  .grafico__ingreso,
+  .grafico__egreso {
+    flex-direction: column;
+    .grafico__circulo {
+      margin: 0;
+    }
+  }
+  .grafico__ingreso {
+    margin-bottom: 4rem;
+  }
+  .informe__container {
+    grid-template-columns: 1fr;
+    margin-bottom: 8rem;
+    gap: 2rem;
+    .informe__ingresos,
+    .informe__egresos {
+      .informe__boxes {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .table__container__cuenta,
+  .table__container__categoria {
+    tbody {
+      tr {
+        .buttons__table {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .login__header {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .login__grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    .login__grafico {
+      display: none;
+    }
+    .login__container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
