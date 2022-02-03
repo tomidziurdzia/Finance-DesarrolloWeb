@@ -31,8 +31,6 @@ li {
   list-style: none;
 }
 
-@import "./base/colores";
-@import "./base/extends";
 @import "./components/header";
 @import "./components/boxes-saldos";
 @import "./components/filter";
@@ -44,6 +42,9 @@ li {
 @import "./components/informes";
 @import "./components/accountCategory";
 @import "./components/login";
+@import "./base/colores";
+@import "./base/extends";
+@import "./base/queries";
 
 /* Inicio Filtro y Nueva Transaccion Btn */
 .filtro-nueva__container {

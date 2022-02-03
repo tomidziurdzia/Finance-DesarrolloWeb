@@ -188,164 +188,6 @@ li {
   color: #ffffff;
 }
 
-.login__grid .login__container .login__form .login__redes button, .informe__container .informe__boxes .informe__card, .footer__container .footer__nav, .footer__container .footer__datos, .footer__container .footer__redes, .account__container .account__boxes .account__card, .filter__container, .box__container .box__card .box__card__icon, .header__container .header__user .user__name, .header__container .header__nav .header__ul li a, .header__container .header__nav .header__ul li, .header__container .header__title a, .filtro__container a,
-.nueva__transaccion a,
-.boton__nueva--cuenta a,
-.boton__nueva--categoria a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__container .header__nav .header__ul li, .header__container .header__title a, .filtro__container a,
-.nueva__transaccion a,
-.boton__nueva--cuenta a,
-.boton__nueva--categoria a {
-  width: 100%;
-  height: 100%;
-}
-
-.login__grid .login__container .login__form .login__redes button, .login__grid .login__container .login__form .login__button, .login__grid .login__container, .informe__container .informe__ingresos, .informe__container .informe__egresos, .graficos__container, .account__container .account__boxes .account__card, .account__container, .filter__container .filter__input, .header__container .header__nav .header__ul li a, .box__container .box__card, .table__container {
-  box-shadow: 0 0px 10px 3px rgba(0, 0, 0, 0.2);
-}
-
-.box__container .box__card {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-  margin: 3rem 0;
-  padding: 2rem 2rem;
-  border-radius: 10px;
-  border: 1px transparent;
-}
-
-.graficos__container div .grafico__egreso, .graficos__container div .grafico__ingreso {
-  padding: 1rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.graficos__container div .grafico__egreso .grafico__circulo, .graficos__container div .grafico__ingreso .grafico__circulo {
-  width: 250px;
-  height: 250px;
-  display: flex;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-@keyframes aparecer {
-  20% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.graficos__container div .grafico__egreso .grafico__circulo:hover, .graficos__container div .grafico__ingreso .grafico__circulo:hover {
-  transition: 2s;
-  transform: rotate(360deg);
-  animation-duration: 2s;
-  animation-name: aparecer;
-}
-
-.graficos__container div .grafico__egreso .grafico__lista, .graficos__container div .grafico__ingreso .grafico__lista {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.graficos__container div .grafico__egreso .grafico__lista .grafico__lista--detalle, .graficos__container div .grafico__ingreso .grafico__lista .grafico__lista--detalle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.graficos__container div .grafico__egreso .grafico__lista .grafico__lista--detalle div, .graficos__container div .grafico__ingreso .grafico__lista .grafico__lista--detalle div {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.graficos__container div .grafico__egreso .grafico__lista .grafico__lista--detalle p, .graficos__container div .grafico__ingreso .grafico__lista .grafico__lista--detalle p {
-  font-size: 1.2rem;
-  margin-left: 0.5rem;
-}
-
-.tables__container .table__container__cuenta thead tr,
-.tables__container .table__container__categoria thead tr, .table__container thead tr {
-  background-color: #7a8fc9;
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.6rem;
-}
-.tables__container .table__container__cuenta thead tr th,
-.tables__container .table__container__categoria thead tr th, .table__container thead tr th {
-  padding: 0.8rem 1.5rem;
-}
-.tables__container .table__container__cuenta tbody tr:nth-last-of-type(even),
-.tables__container .table__container__categoria tbody tr:nth-last-of-type(even), .table__container tbody tr:nth-last-of-type(even) {
-  background-color: #dfe7fd;
-}
-.tables__container .table__container__cuenta tbody tr:last-of-type,
-.tables__container .table__container__categoria tbody tr:last-of-type, .table__container tbody tr:last-of-type {
-  border-bottom: 2px solid #7a8fc9;
-}
-.tables__container .table__container__cuenta tbody tr td,
-.tables__container .table__container__categoria tbody tr td, .table__container tbody tr td {
-  padding: 0.8rem 1.5rem;
-}
-.tables__container .table__container__cuenta tbody tr .buttons__table,
-.tables__container .table__container__categoria tbody tr .buttons__table, .table__container tbody tr .buttons__table {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.tables__container .table__container__cuenta tbody tr .buttons__table a,
-.tables__container .table__container__categoria tbody tr .buttons__table a, .table__container tbody tr .buttons__table a {
-  width: 2.2rem;
-  height: 2.2rem;
-}
-.tables__container .table__container__cuenta tbody tr .buttons__table a svg,
-.tables__container .table__container__categoria tbody tr .buttons__table a svg, .table__container tbody tr .buttons__table a svg {
-  width: 2.2rem;
-  height: 2.2rem;
-}
-
-.table__container {
-  border-collapse: collapse;
-  margin: 2.5rem auto 1rem auto;
-  font-size: 1.5rem;
-  min-width: 120rem;
-  border: 1px transparent;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-}
-
-.tables__container {
-  max-width: 140rem;
-  margin: 2rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  width: 90%;
-}
-
-.filtro__container,
-.nueva__transaccion,
-.boton__nueva--cuenta,
-.boton__nueva--categoria {
-  width: 22rem;
-  height: 6rem;
-  font-size: 2rem;
-}
-.filtro__container a,
-.nueva__transaccion a,
-.boton__nueva--cuenta a,
-.boton__nueva--categoria a {
-  border-radius: 10px;
-  padding: 1rem 0rem;
-  color: #ffffff;
-}
-
 .header__container {
   width: 95%;
   margin: 1rem auto;
@@ -2228,6 +2070,314 @@ li {
   margin-right: 0.5rem;
 }
 
+.filtro__container a,
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li, .header__container .header__nav .header__ul li a, .header__container .header__user .user__name, .box__container .box__card .box__card__icon, .filter__container, .account__container .account__boxes .account__card, .footer__container .footer__redes, .footer__container .footer__datos, .footer__container .footer__nav, .informe__container .informe__boxes .informe__card, .login__grid .login__container .login__form .login__redes button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtro__container a,
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a, .header__container .header__title a, .header__container .header__nav .header__ul li {
+  width: 100%;
+  height: 100%;
+}
+
+.header__container .header__nav .header__ul li a, .box__container .box__card, .filter__container .filter__input, .account__container, .account__container .account__boxes .account__card, .graficos__container, .table__container, .informe__container .informe__ingresos, .informe__container .informe__egresos, .login__grid .login__container, .login__grid .login__container .login__form .login__button, .login__grid .login__container .login__form .login__redes button {
+  box-shadow: 0 0px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.box__container .box__card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 3rem 0;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  border: 1px transparent;
+}
+
+.graficos__container div .grafico__ingreso, .graficos__container div .grafico__egreso {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.graficos__container div .grafico__ingreso .grafico__circulo, .graficos__container div .grafico__egreso .grafico__circulo {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+@keyframes aparecer {
+  20% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.graficos__container div .grafico__ingreso .grafico__circulo:hover, .graficos__container div .grafico__egreso .grafico__circulo:hover {
+  transition: 2s;
+  transform: rotate(360deg);
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+.graficos__container div .grafico__ingreso .grafico__lista, .graficos__container div .grafico__egreso .grafico__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.graficos__container div .grafico__ingreso .grafico__lista .grafico__lista--detalle, .graficos__container div .grafico__egreso .grafico__lista .grafico__lista--detalle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.graficos__container div .grafico__ingreso .grafico__lista .grafico__lista--detalle div, .graficos__container div .grafico__egreso .grafico__lista .grafico__lista--detalle div {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.graficos__container div .grafico__ingreso .grafico__lista .grafico__lista--detalle p, .graficos__container div .grafico__egreso .grafico__lista .grafico__lista--detalle p {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.table__container thead tr, .tables__container .table__container__cuenta thead tr,
+.tables__container .table__container__categoria thead tr {
+  background-color: #7a8fc9;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.table__container thead tr th, .tables__container .table__container__cuenta thead tr th,
+.tables__container .table__container__categoria thead tr th {
+  padding: 0.8rem 1.5rem;
+}
+.table__container tbody tr:nth-last-of-type(even), .tables__container .table__container__cuenta tbody tr:nth-last-of-type(even),
+.tables__container .table__container__categoria tbody tr:nth-last-of-type(even) {
+  background-color: #dfe7fd;
+}
+.table__container tbody tr:last-of-type, .tables__container .table__container__cuenta tbody tr:last-of-type,
+.tables__container .table__container__categoria tbody tr:last-of-type {
+  border-bottom: 2px solid #7a8fc9;
+}
+.table__container tbody tr td, .tables__container .table__container__cuenta tbody tr td,
+.tables__container .table__container__categoria tbody tr td {
+  padding: 0.8rem 1.5rem;
+}
+.table__container tbody tr .buttons__table, .tables__container .table__container__cuenta tbody tr .buttons__table,
+.tables__container .table__container__categoria tbody tr .buttons__table {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.table__container tbody tr .buttons__table a, .tables__container .table__container__cuenta tbody tr .buttons__table a,
+.tables__container .table__container__categoria tbody tr .buttons__table a {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.table__container tbody tr .buttons__table a svg, .tables__container .table__container__cuenta tbody tr .buttons__table a svg,
+.tables__container .table__container__categoria tbody tr .buttons__table a svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.table__container {
+  border-collapse: collapse;
+  margin: 2.5rem auto 1rem auto;
+  font-size: 1.5rem;
+  min-width: 120rem;
+  border: 1px transparent;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.tables__container {
+  max-width: 140rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 90%;
+}
+
+.filtro__container,
+.nueva__transaccion,
+.boton__nueva--cuenta,
+.boton__nueva--categoria {
+  width: 22rem;
+  height: 6rem;
+  font-size: 2rem;
+}
+.filtro__container a,
+.nueva__transaccion a,
+.boton__nueva--cuenta a,
+.boton__nueva--categoria a {
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  color: #ffffff;
+}
+
+/* INICIO @media only screen and (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 8fr 6fr;
+  }
+  .header__container .header__user {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header__container .header__user .user__name {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .header__container .header__user .user__name p {
+    display: none;
+  }
+
+  .box__container {
+    grid-template-columns: 1fr;
+  }
+  .box__container .box__card {
+    margin: 1rem;
+  }
+
+  .filter__container {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .filter__container .filter__input {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .account__container {
+    width: 90%;
+  }
+  .account__container .account__title h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  .account__container .account__boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico__ingreso,
+.grafico__egreso {
+    flex-direction: column;
+  }
+  .grafico__ingreso .grafico__circulo,
+.grafico__egreso .grafico__circulo {
+    margin: 0;
+  }
+
+  .grafico__ingreso {
+    margin-bottom: 4rem;
+  }
+
+  .informe__container {
+    grid-template-columns: 1fr;
+    margin-bottom: 8rem;
+    gap: 2rem;
+  }
+  .informe__container .informe__ingresos .informe__boxes,
+.informe__container .informe__egresos .informe__boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .table__container__cuenta tbody tr .buttons__table,
+.table__container__categoria tbody tr .buttons__table {
+    flex-direction: column;
+  }
+
+  .login__header {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .login__grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .login__grid .login__grafico {
+    display: none;
+  }
+  .login__grid .login__container {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* INICIO @media only screen and (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  body {
+    padding-bottom: 1rem;
+  }
+  body .container .header__container .header__nav {
+    position: fixed;
+    bottom: 6rem;
+    right: 0;
+    left: 0;
+  }
+  body .container .header__container .header__nav .div__label__menu {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #4173ff;
+    z-index: 10;
+  }
+  body .container .header__container .header__nav .div__label__menu .footer__redes--label {
+    display: block;
+    width: 15rem;
+  }
+  body .container .header__container .header__nav .div__label__menu .footer__redes--label ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+  }
+  body .container .header__container .header__nav label {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+  }
+  body .container .header__container .header__nav .header__ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  body .container .header__container .header__nav .header__ul li a {
+    background-color: #4173ff;
+    color: #ffffff;
+  }
+  body .graficos__container {
+    flex-direction: column;
+    margin-bottom: 7rem;
+  }
+  body .footer__container {
+    display: none;
+  }
+  body .boton__mas {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 42%;
+  }
+}
 /* Inicio Filtro y Nueva Transaccion Btn */
 .filtro-nueva__container {
   display: grid;
