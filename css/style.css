@@ -2296,6 +2296,12 @@ li {
     grid-template-columns: 1fr;
   }
 
+  .tables__container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
   .table__container__cuenta tbody tr .buttons__table,
 .table__container__categoria tbody tr .buttons__table {
     flex-direction: column;
@@ -2323,13 +2329,13 @@ li {
   body {
     padding-bottom: 1rem;
   }
-  body .container .header__container .header__nav {
+  body header .header__container .header__nav {
     position: fixed;
     bottom: 6rem;
     right: 0;
     left: 0;
   }
-  body .container .header__container .header__nav .div__label__menu {
+  body header .header__container .header__nav .div__label__menu {
     display: block;
     position: fixed;
     bottom: 0;
@@ -2338,34 +2344,48 @@ li {
     background-color: #4173ff;
     z-index: 10;
   }
-  body .container .header__container .header__nav .div__label__menu .footer__redes--label {
+  body header .header__container .header__nav .div__label__menu .footer__redes--label {
     display: block;
     width: 15rem;
   }
-  body .container .header__container .header__nav .div__label__menu .footer__redes--label ul {
+  body header .header__container .header__nav .div__label__menu .footer__redes--label ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 5rem;
   }
-  body .container .header__container .header__nav label {
+  body header .header__container .header__nav .div__label__menu label {
     display: block;
     position: fixed;
     bottom: 0px;
     right: 5px;
   }
-  body .container .header__container .header__nav .header__ul li {
+  body header .header__container .header__nav .header__ul {
+    display: none;
+  }
+  body header .header__container .header__nav input {
+    display: none;
+  }
+  body header .header__container .header__nav input:checked ~ .header__ul {
     display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+  body header .header__container .header__nav input:checked ~ .header__ul li {
+    display: flex;
     margin: 0.5rem 0;
   }
-  body .container .header__container .header__nav .header__ul li a {
+  body header .header__container .header__nav input:checked ~ .header__ul li a {
     background-color: #4173ff;
     color: #ffffff;
   }
   body .graficos__container {
     flex-direction: column;
     margin-bottom: 7rem;
+  }
+  body .graficos__container div .grafico__ingreso, body .graficos__container div .grafico__egreso {
+    justify-content: center;
   }
   body .footer__container {
     display: none;
@@ -2376,6 +2396,147 @@ li {
     font-size: 24px;
     bottom: 20px;
     right: 42%;
+  }
+  body .filtro-nueva__container {
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+  body .filtro-nueva__container .filtro__container {
+    width: 40%;
+  }
+  body .filtro-nueva__container .nueva__transaccion {
+    display: none;
+  }
+  body .boton__nueva--categoria, body .boton__nueva--cuenta {
+    width: 90%;
+  }
+  body .boton__nueva--categoria a, body .boton__nueva--cuenta a {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  body .tables__container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  body .tables__container .table__container__categoria, body .tables__container .table__container__cuenta {
+    margin-bottom: 5rem;
+  }
+  body .tables__container .table__container__categoria tbody tr td, body .tables__container .table__container__cuenta tbody tr td {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  body .table__container tbody tr {
+    text-align: center;
+  }
+  body .table__container tbody tr .buttons__table {
+    justify-content: center;
+  }
+}
+/* FIN @media only screen and (max-width: 768px) */
+/* INICIO @media only screen and (min-width: 481px) and (max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+  }
+  .header__container .header__title a {
+    justify-content: flex-start;
+  }
+
+  .table__container tbody tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .box__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .box__container .box__card:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  .box__container .box__card:nth-child(3) {
+    grid-area: 2/2/3/3;
+  }
+  .box__container .box__card:nth-child(4) {
+    grid-area: 1/2/2/3;
+  }
+  .box__container .box__card {
+    width: 90%;
+    margin: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .boton__mas {
+    right: 45% !important;
+  }
+
+  .informe__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 8rem;
+  }
+}
+/* FIN @media only screen and (min-width: 481px) and (max-width: 768px) */
+/* OTRAS MEDIAS QUERIES */
+@media only screen and (max-width: 1024px) {
+  .table__container {
+    min-width: max-content;
+    margin: auto;
+    width: 90%;
+  }
+  .table__container thead {
+    display: none;
+  }
+  .table__container tbody {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .table__container tbody tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .table__pags {
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__user input:checked ~ .user__ul {
+    left: 80%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .account__boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 768px) {
+  .account__boxes {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .grafico__ingreso,
+.grafico__egreso {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .table__container {
+    margin-top: 2rem;
+  }
+  .table__container tbody tr {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .table__container tbody tr td {
+    text-align: center;
+  }
+  .table__container tbody tr .buttons__table {
+    justify-content: center;
   }
 }
 /* Inicio Filtro y Nueva Transaccion Btn */
