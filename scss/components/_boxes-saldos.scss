@@ -1,4 +1,4 @@
-@import '../base/colores';
+@import '../base/variables';
 @import '../base/extends';
 
 .box__container {
@@ -23,13 +23,13 @@
             border-radius: 50px;
         }
         .inicial {
-        background-color: $yellow;
+        background-color: map-get($map: $colores, $key: 'yellow');
         }
         .ingresos {
-        background-color: $green;
+        background-color: map-get($map: $colores, $key: 'green');
         }
         .egresos {
-        background-color: $red;
+        background-color: map-get($map: $colores, $key: 'red');
         }
         .final {
         background-color: #277da1;

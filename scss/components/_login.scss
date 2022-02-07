@@ -1,4 +1,4 @@
-@import '../base/colores';
+@import '../base/variables';
 @import '../base/extends';
 
 .login__header {
@@ -49,8 +49,8 @@
                 margin: auto;
                 text-align: center;
                 padding: 1rem 2rem;
-                background-color: $primary-color;
-                color: $blanco;
+                background-color: map-get($map: $colores, $key: 'primary-color');
+                color: map-get($map: $colores, $key: 'blanco');
                 font-size: 1.5rem;
                 border-radius: 10px;
                 border: 1px transparent;
@@ -76,7 +76,7 @@
                     width: 12rem;
                     padding: 1rem 1rem;
                     background-color: rgb(219, 68, 55);
-                    color: $blanco;
+                    color: map-get($map: $colores, $key: 'blanco');
                     font-size: 2rem;
                     border-radius: 10px;
                     border: 1px transparent;

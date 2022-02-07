@@ -42,7 +42,7 @@ li {
 @import "./components/informes";
 @import "./components/accountCategory";
 @import "./components/login";
-@import "./base/colores";
+@import "./base/variables";
 @import "./base/extends";
 @import "./base/queries";
 
@@ -62,11 +62,11 @@ li {
 
 .filtro__container a,
 .boton__nueva--cuenta a {
-  background-color: $green;
+  background-color: map-get($map: $colores, $key: 'green');
 }
 
 .nueva__transaccion a,
 .boton__nueva--categoria a {
-  background-color: $blue;
+  background-color: map-get($map: $colores, $key: 'blue');
 }
 /* Fin Filtro y Nueva Transaccion Btn */

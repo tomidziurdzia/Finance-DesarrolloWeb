@@ -103,7 +103,7 @@
             bottom: 0;
             width: 100%;
             height: 5rem;
-            background-color: $primary-color;
+            background-color: map-get($map: $colores, $key: 'primary-color');
             z-index: 10;
             .footer__redes--label {
               display: block;
@@ -128,8 +128,8 @@
               display: block;
               margin: 0.5rem 0;
               a {
-                background-color: $blue;
-                color: $blanco;
+                background-color: map-get($map: $colores, $key: 'blue');
+                color: map-get($map: $colores, $key: 'blanco');
               }
             }
           }

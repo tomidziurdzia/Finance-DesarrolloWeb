@@ -1,4 +1,4 @@
-@import '../base/colores';
+@import '../base/variables';
 @import '../base/extends';
 
 .account__container {
@@ -28,7 +28,7 @@
             @extend %flex;
             flex-direction: column;
             text-align: center;
-            background-color: $blanco;
+            background-color: map-get($map: $colores, $key: 'blanco');
             border-radius: 10px;
             border: 1px transparent;
             padding: 1rem;

@@ -1,5 +1,6 @@
-@import '../base/colores';
+@import '../base/variables';
 @import '../base/extends';
+@import '../base/mixin';
 
 .graficos__container {
     width: 95%;
@@ -33,19 +34,19 @@
                 .grafico__lista--detalle {
                     @extend %graficoListaDet;
                     .ventas {
-                        background-color: #f07167;   
+                        @include coloresGraficos(#f07167);   
                     }
                     .dif-cot {
-                        background-color: #99d98c;
+                        @include coloresGraficos(#99d98c);
                     }
                     .int-gan {
-                        background-color: #277da1;
+                        @include coloresGraficos(#277da1);
                     }
                     .alquileres {
-                        background-color: #ffd166;
+                        @include coloresGraficos(#ffd166);
                     }
                     .otras-ventas {
-                        background-color: orange;
+                        @include coloresGraficos(orange);
                     }
                 }
             }
@@ -66,19 +67,19 @@
                 .grafico__lista--detalle {
                     @extend %graficoListaDet;
                     .ventas {
-                        background-color: #f07167;   
+                        @include coloresGraficos(#f07167);   
                     }
                     .dif-cot {
-                        background-color: #99d98c;
+                        @include coloresGraficos(#99d98c);
                     }
                     .int-gan {
-                        background-color: #277da1;
+                        @include coloresGraficos(#277da1);
                     }
                     .alquileres {
-                        background-color: #ffd166;
+                        @include coloresGraficos(#ffd166);
                     }
                     .otras-ventas {
-                        background-color: orange;
+                        @include coloresGraficos(orange);
                     }
                 }
             }

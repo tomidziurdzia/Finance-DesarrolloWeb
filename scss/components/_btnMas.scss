@@ -1,4 +1,4 @@
-@import '../base/colores';
+@import '../base/variables';
 
 .boton__mas {
   position: fixed;
@@ -6,8 +6,8 @@
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: $green;
-  color: $blanco;
+  background-color: map-get($map: $colores, $key: 'green');
+  color: map-get($map: $colores, $key: 'blanco');
   border-radius: 50px;
   text-align: center;
   font-size: 30px;

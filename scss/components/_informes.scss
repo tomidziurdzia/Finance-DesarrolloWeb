@@ -1,4 +1,4 @@
-@import '../base/colores';
+@import '../base/variables';
 @import '../base/extends';
 
 .informe__container {
@@ -16,7 +16,7 @@
         @extend %shadow;
         .informe__title {
             text-align: center;
-            border-bottom: 2px solid $gray;
+            border-bottom: 2px solid map-get($map: $colores, $key: 'gray');
             h2 {
                 font-size: 2.5rem;
                 font-weight: bold;

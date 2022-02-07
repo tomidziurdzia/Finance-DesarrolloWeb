@@ -1,4 +1,4 @@
-@import '../base/colores';
+@import '../base/variables';
 @import '../base/extends';
 
 .table__container {
@@ -17,6 +17,6 @@
         font-size: 1.5rem;
         border-radius: 10px;
         background-color: #7a8fc9;
-        color: $blanco;
+        color: map-get($map: $colores, $key: 'blanco');
     }
 }

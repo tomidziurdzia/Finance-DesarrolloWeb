@@ -81,7 +81,7 @@
     thead {
         tr {
             background-color: #7a8fc9;
-            color: $blanco;
+            color: map-get($map: $colores, $key: 'blanco');
             text-align: center;
             font-weight: bold;
             font-size: 1.6rem;
@@ -148,6 +148,6 @@
         @extend %wyh;
         border-radius: 10px;
         padding: 1rem 0rem;
-        color: $blanco;
+        color: map-get($map: $colores, $key: 'blanco');
     }
 }
