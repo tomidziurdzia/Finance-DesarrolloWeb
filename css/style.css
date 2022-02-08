@@ -252,6 +252,7 @@ li {
 }
 .header__container .header__user .user__name img {
   width: 3rem;
+  height: 3rem;
   margin-right: 0.5rem;
 }
 .header__container .header__user .div__label__user {
