@@ -70,4 +70,8 @@ li {
 .boton__nueva--categoria a {
   background-color: map-get($map: $colores, $key: 'blue');
 }
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
 /* Fin Filtro y Nueva Transaccion Btn */
